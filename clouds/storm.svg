@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 340" width="600" height="340">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="60%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#334155"/>
+    </linearGradient>
+    <linearGradient id="cloud-grad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#64748b"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="4" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="600" height="340" fill="url(#sky)"/>
+  <!-- Anvil top -->
+  <ellipse cx="300" cy="60" rx="240" ry="35" fill="#475569" opacity="0.9"/>
+  <!-- Tower -->
+  <rect x="200" y="55" width="200" height="160" fill="#334155" rx="10"/>
+  <!-- Main cloud mass -->
+  <ellipse cx="300" cy="220" rx="230" ry="80" fill="url(#cloud-grad)"/>
+  <circle cx="150" cy="200" r="80" fill="#334155"/>
+  <circle cx="240" cy="175" r="95" fill="#3d5169"/>
+  <circle cx="340" cy="165" r="100" fill="#3d5169"/>
+  <circle cx="440" cy="190" r="82" fill="#334155"/>
+  <!-- Lightning bolt -->
+  <polygon points="310,200 295,255 308,255 290,310 325,245 311,245 328,200" fill="#fbbf24" filter="url(#glow)"/>
+  <!-- Rain streaks -->
+  <line x1="180" y1="280" x2="170" y2="330" stroke="#93c5fd" stroke-width="1.5" opacity="0.5"/>
+  <line x1="220" y1="285" x2="210" y2="335" stroke="#93c5fd" stroke-width="1.5" opacity="0.5"/>
+  <line x1="380" y1="282" x2="370" y2="332" stroke="#93c5fd" stroke-width="1.5" opacity="0.5"/>
+  <line x1="420" y1="278" x2="410" y2="328" stroke="#93c5fd" stroke-width="1.5" opacity="0.5"/>
+</svg>

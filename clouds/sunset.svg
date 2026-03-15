@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 340" width="600" height="340">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4c1d95"/>
+      <stop offset="40%" stop-color="#be185d"/>
+      <stop offset="70%" stop-color="#f97316"/>
+      <stop offset="100%" stop-color="#fbbf24"/>
+    </linearGradient>
+    <linearGradient id="c1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fde68a"/>
+      <stop offset="100%" stop-color="#fb923c"/>
+    </linearGradient>
+    <linearGradient id="c2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f9a8d4"/>
+      <stop offset="100%" stop-color="#e879f9"/>
+    </linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="6"/></filter>
+  </defs>
+  <rect width="600" height="340" fill="url(#sky)"/>
+  <!-- Sun -->
+  <circle cx="300" cy="280" r="70" fill="#fbbf24" opacity="0.3" filter="url(#glow)"/>
+  <circle cx="300" cy="280" r="40" fill="#fbbf24" opacity="0.7"/>
+  <!-- Cloud layers -->
+  <ellipse cx="150" cy="180" rx="140" ry="38" fill="url(#c2)" opacity="0.8"/>
+  <circle cx="80"  cy="168" r="42" fill="#f0abfc" opacity="0.8"/>
+  <circle cx="145" cy="158" r="52" fill="#f9a8d4" opacity="0.85"/>
+  <circle cx="210" cy="165" r="45" fill="#f0abfc" opacity="0.8"/>
+
+  <ellipse cx="450" cy="155" rx="130" ry="35" fill="url(#c1)" opacity="0.85"/>
+  <circle cx="385" cy="145" r="40" fill="#fed7aa" opacity="0.85"/>
+  <circle cx="445" cy="135" r="50" fill="#fde68a" opacity="0.9"/>
+  <circle cx="505" cy="148" r="42" fill="#fed7aa" opacity="0.85"/>
+
+  <!-- Bottom cloud band -->
+  <ellipse cx="300" cy="240" rx="260" ry="28" fill="#1e1b4b" opacity="0.5"/>
+  <ellipse cx="300" cy="235" rx="240" ry="20" fill="#312e81" opacity="0.4"/>
+</svg>

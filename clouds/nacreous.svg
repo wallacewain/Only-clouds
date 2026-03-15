@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 340" width="600" height="340">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#020617"/>
+      <stop offset="100%" stop-color="#1e1b4b"/>
+    </linearGradient>
+    <linearGradient id="nacreous" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#e879f9"/>
+      <stop offset="25%"  stop-color="#818cf8"/>
+      <stop offset="50%"  stop-color="#38bdf8"/>
+      <stop offset="75%"  stop-color="#34d399"/>
+      <stop offset="100%" stop-color="#fbbf24"/>
+    </linearGradient>
+    <filter id="blur"><feGaussianBlur stdDeviation="5"/></filter>
+    <filter id="softblur"><feGaussianBlur stdDeviation="2"/></filter>
+  </defs>
+  <rect width="600" height="340" fill="url(#sky)"/>
+  <!-- Stars -->
+  <circle cx="30"  cy="20"  r="1.5" fill="white" opacity="0.9"/>
+  <circle cx="80"  cy="45"  r="1"   fill="white" opacity="0.7"/>
+  <circle cx="160" cy="15"  r="1.5" fill="white" opacity="0.8"/>
+  <circle cx="250" cy="30"  r="1"   fill="white" opacity="0.6"/>
+  <circle cx="400" cy="18"  r="1.5" fill="white" opacity="0.9"/>
+  <circle cx="480" cy="40"  r="1"   fill="white" opacity="0.7"/>
+  <circle cx="550" cy="22"  r="1.5" fill="white" opacity="0.8"/>
+  <circle cx="560" cy="80"  r="1"   fill="white" opacity="0.5"/>
+  <!-- Iridescent glow behind -->
+  <ellipse cx="300" cy="175" rx="290" ry="80" fill="url(#nacreous)" opacity="0.15" filter="url(#blur)"/>
+  <!-- Main nacreous cloud band -->
+  <path d="M 0 150 Q 150 120 300 145 Q 450 170 600 140 L 600 190 Q 450 220 300 195 Q 150 170 0 200 Z" fill="url(#nacreous)" opacity="0.55" filter="url(#softblur)"/>
+  <path d="M 0 155 Q 150 128 300 150 Q 450 175 600 145 L 600 185 Q 450 215 300 190 Q 150 165 0 195 Z" fill="url(#nacreous)" opacity="0.35"/>
+  <!-- Shimmer streaks -->
+  <path d="M 50 160 Q 200 140 350 158 Q 450 168 550 152" stroke="white" stroke-width="2" fill="none" opacity="0.3" filter="url(#softblur)"/>
+  <path d="M 20 175 Q 180 158 320 172 Q 440 182 580 165" stroke="#e879f9" stroke-width="1.5" fill="none" opacity="0.25" filter="url(#softblur)"/>
+</svg>

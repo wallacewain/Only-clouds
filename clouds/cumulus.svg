@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 340" width="600" height="340">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0369a1"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="340" fill="url(#sky)"/>
+  <!-- Fluffy cumulus cloud -->
+  <ellipse cx="300" cy="230" rx="210" ry="65" fill="#f0f9ff"/>
+  <circle cx="170" cy="210" r="65" fill="white"/>
+  <circle cx="240" cy="175" r="85" fill="white"/>
+  <circle cx="330" cy="160" r="95" fill="white"/>
+  <circle cx="420" cy="185" r="75" fill="white"/>
+  <circle cx="470" cy="215" r="58" fill="#f0f9ff"/>
+  <!-- Top puffs -->
+  <circle cx="295" cy="130" r="60" fill="white"/>
+  <circle cx="345" cy="118" r="55" fill="white"/>
+  <!-- Shadow base -->
+  <ellipse cx="300" cy="278" rx="185" ry="22" fill="#bae6fd" opacity="0.5"/>
+  <!-- Highlights -->
+  <circle cx="250" cy="168" r="40" fill="white" opacity="0.5"/>
+</svg>

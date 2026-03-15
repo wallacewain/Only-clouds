@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" width="800" height="420">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1e40af"/>
+      <stop offset="100%" stop-color="#7dd3fc"/>
+    </linearGradient>
+    <filter id="blur1"><feGaussianBlur stdDeviation="4"/></filter>
+    <filter id="blur2"><feGaussianBlur stdDeviation="8"/></filter>
+  </defs>
+  <rect width="800" height="420" fill="url(#sky)"/>
+  <!-- Sun glow -->
+  <circle cx="680" cy="80" r="60" fill="#fde68a" opacity="0.3" filter="url(#blur2)"/>
+  <circle cx="680" cy="80" r="35" fill="#fbbf24" opacity="0.6"/>
+  <!-- Background clouds -->
+  <ellipse cx="120" cy="200" rx="130" ry="55" fill="white" opacity="0.25" filter="url(#blur1)"/>
+  <ellipse cx="700" cy="160" rx="100" ry="40" fill="white" opacity="0.2" filter="url(#blur1)"/>
+  <!-- Main cloud body -->
+  <ellipse cx="380" cy="260" rx="220" ry="70" fill="white" opacity="0.95"/>
+  <circle cx="260" cy="240" r="75" fill="white"/>
+  <circle cx="340" cy="210" r="95" fill="white"/>
+  <circle cx="430" cy="200" r="105" fill="white"/>
+  <circle cx="520" cy="230" r="80" fill="white"/>
+  <!-- Shading -->
+  <ellipse cx="380" cy="310" rx="200" ry="30" fill="#dbeafe" opacity="0.6"/>
+  <circle cx="340" cy="230" r="90" fill="#eff6ff" opacity="0.4"/>
+  <!-- Small decorative cloud -->
+  <circle cx="150" cy="140" r="30" fill="white" opacity="0.7"/>
+  <circle cx="180" cy="130" r="38" fill="white" opacity="0.7"/>
+  <circle cx="210" cy="140" r="28" fill="white" opacity="0.7"/>
+  <ellipse cx="180" cy="158" rx="60" ry="22" fill="white" opacity="0.7"/>
+</svg>
