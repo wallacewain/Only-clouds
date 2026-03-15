@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OnlyClouds — Subscribe to Your Favourite Clouds</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="navbar">
+    <div class="brand">
+      <span class="logo">&#9729;</span>
+      <span class="brand-name">OnlyClouds</span>
+      <span class="tagline">The Premium Cloud Content Platform</span>
+    </div>
+    <nav class="nav-links">
+      <a href="#featured">Featured</a>
+      <a href="#creators">Creators</a>
+      <a href="#pricing">Pricing</a>
+      <button class="btn-subscribe" onclick="showAlert()">Sign Up Free</button>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Exclusive Cloud Content<br /><em>You Won't Find Anywhere Else</em></h1>
+      <p class="hero-sub">Subscribe to your favourite clouds for behind-the-scenes cumulus, unreleased cirrus, and spicy stratus content. 18+ (in cloud years, that's about 18 minutes).</p>
+      <button class="btn-big" onclick="showAlert()">Start Subscribing — It's Free</button>
+      <p class="disclaimer">* No actual clouds were harmed. All precipitation is consensual.</p>
+    </div>
+    <div class="hero-cloud">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Cloud_over_the_Atlantic_Ocean.jpg/1280px-Cloud_over_the_Atlantic_Ocean.jpg"
+           alt="A very attractive cloud"
+           class="hero-img" />
+      <div class="hero-badge">&#128293; TRENDING</div>
+    </div>
+  </section>
+
+  <!-- STATS BAR -->
+  <div class="stats-bar">
+    <div class="stat"><span class="stat-num">2.4M+</span><span class="stat-label">Active Clouds</span></div>
+    <div class="stat"><span class="stat-num">800K+</span><span class="stat-label">Subscribers</span></div>
+    <div class="stat"><span class="stat-num">99.9%</span><span class="stat-label">Uptime (weather permitting)</span></div>
+    <div class="stat"><span class="stat-num">&#9728;</span><span class="stat-label">Zero Chemtrails</span></div>
+  </div>
+
+  <!-- FEATURED CONTENT -->
+  <section class="section" id="featured">
+    <h2 class="section-title">&#128248; Featured Content</h2>
+    <p class="section-sub">Handpicked by our meteorological team</p>
+    <div class="grid">
+
+      <div class="card locked">
+        <div class="card-img-wrap">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Anvil_shaped_cumulus_cloud.jpg/1280px-Anvil_shaped_cumulus_cloud.jpg"
+               alt="Big cumulus" />
+          <div class="lock-overlay">&#128274; SUBSCRIBERS ONLY</div>
+        </div>
+        <div class="card-body">
+          <div class="creator-row">
+            <span class="avatar">&#9928;</span>
+            <span class="creator-name">@CumulusKing</span>
+            <span class="verified">&#10003; Verified</span>
+          </div>
+          <p class="card-desc">"Feeling extra fluffy today &#128522; slide into my DMs for the full 4K anvil shoot"</p>
+          <div class="card-meta">
+            <span>&#10084;&#65039; 42.1K</span>
+            <span>&#128247; 1,203 posts</span>
+          </div>
+          <button class="btn-unlock" onclick="showSubscribe('@CumulusKing', '$4.99/mo')">Subscribe $4.99/mo</button>
+        </div>
+      </div>
+
+      <div class="card locked">
+        <div class="card-img-wrap">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Clouds_over_the_Atlantic_Ocean.jpg/1280px-Clouds_over_the_Atlantic_Ocean.jpg"
+               alt="Wispy cirrus" />
+          <div class="lock-overlay">&#128274; SUBSCRIBERS ONLY</div>
+        </div>
+        <div class="card-body">
+          <div class="creator-row">
+            <span class="avatar">&#9729;</span>
+            <span class="creator-name">@CirrusBabe</span>
+            <span class="verified">&#10003; Verified</span>
+          </div>
+          <p class="card-desc">"High altitude, high standards &#10024; My exclusive wispy content is finally here"</p>
+          <div class="card-meta">
+            <span>&#10084;&#65039; 38.7K</span>
+            <span>&#128247; 890 posts</span>
+          </div>
+          <button class="btn-unlock" onclick="showSubscribe('@CirrusBabe', '$6.99/mo')">Subscribe $6.99/mo</button>
+        </div>
+      </div>
+
+      <div class="card locked">
+        <div class="card-img-wrap">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Above_Gotham.jpg/1280px-Above_Gotham.jpg"
+               alt="Dramatic storm clouds" />
+          <div class="lock-overlay">&#128274; SUBSCRIBERS ONLY</div>
+        </div>
+        <div class="card-body">
+          <div class="creator-row">
+            <span class="avatar">&#9928;</span>
+            <span class="creator-name">@StormbringerX</span>
+            <span class="verified">&#10003; Verified</span>
+          </div>
+          <p class="card-desc">"Big. Dark. Electrifying. &#9889; My cumulonimbus content will leave you speechless"</p>
+          <div class="card-meta">
+            <span>&#10084;&#65039; 91.4K</span>
+            <span>&#128247; 2,041 posts</span>
+          </div>
+          <button class="btn-unlock" onclick="showSubscribe('@StormbringerX', '$9.99/mo')">Subscribe $9.99/mo</button>
+        </div>
+      </div>
+
+      <div class="card locked">
+        <div class="card-img-wrap">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Mammatus_clouds_2.jpg/1280px-Mammatus_clouds_2.jpg"
+               alt="Mammatus clouds" />
+          <div class="lock-overlay">&#128274; SUBSCRIBERS ONLY</div>
+        </div>
+        <div class="card-body">
+          <div class="creator-row">
+            <span class="avatar">&#127774;</span>
+            <span class="creator-name">@MammatusQueen</span>
+            <span class="verified">&#10003; Verified</span>
+          </div>
+          <p class="card-desc">"Pouchy, rare, and 100% natural &#128536; Exclusive mammatus formations you've never seen"</p>
+          <div class="card-meta">
+            <span>&#10084;&#65039; 67.2K</span>
+            <span>&#128247; 415 posts</span>
+          </div>
+          <button class="btn-unlock" onclick="showSubscribe('@MammatusQueen', '$7.99/mo')">Subscribe $7.99/mo</button>
+        </div>
+      </div>
+
+      <div class="card locked">
+        <div class="card-img-wrap">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Sunrise_over_the_sea.jpg/1280px-Sunrise_over_the_sea.jpg"
+               alt="Sunset clouds" />
+          <div class="lock-overlay">&#128274; SUBSCRIBERS ONLY</div>
+        </div>
+        <div class="card-body">
+          <div class="creator-row">
+            <span class="avatar">&#127752;</span>
+            <span class="creator-name">@GoldenHourGloriana</span>
+            <span class="verified">&#10003; Verified</span>
+          </div>
+          <p class="card-desc">"Catch me at dusk &#127751; My golden hour content is *chef's kiss* — subscribers get the unfiltered shots"</p>
+          <div class="card-meta">
+            <span>&#10084;&#65039; 115K</span>
+            <span>&#128247; 3,322 posts</span>
+          </div>
+          <button class="btn-unlock" onclick="showSubscribe('@GoldenHourGloriana', '$12.99/mo')">Subscribe $12.99/mo</button>
+        </div>
+      </div>
+
+      <div class="card locked">
+        <div class="card-img-wrap">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Nacreous_clouds_Antarctica.jpg/1280px-Nacreous_clouds_Antarctica.jpg"
+               alt="Nacreous clouds" />
+          <div class="lock-overlay">&#128274; SUBSCRIBERS ONLY</div>
+        </div>
+        <div class="card-body">
+          <div class="creator-row">
+            <span class="avatar">&#128142;</span>
+            <span class="creator-name">@NacreousNadia</span>
+            <span class="verified">&#10003; Verified</span>
+          </div>
+          <p class="card-desc">"I only appear in polar stratospheres &#10024; Limited-time iridescent content. Very rare. Very me."</p>
+          <div class="card-meta">
+            <span>&#10084;&#65039; 203K</span>
+            <span>&#128247; 88 posts</span>
+          </div>
+          <button class="btn-unlock" onclick="showSubscribe('@NacreousNadia', '$19.99/mo')">Subscribe $19.99/mo</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CREATORS / LEADERBOARD -->
+  <section class="section section-dark" id="creators">
+    <h2 class="section-title">&#127942; Top Creators This Month</h2>
+    <p class="section-sub">Ranked by precipitation potential and follower engagement</p>
+    <div class="leaderboard">
+      <div class="lb-row" onclick="showSubscribe('@StormbringerX', '$9.99/mo')">
+        <span class="lb-rank">&#129351;</span>
+        <span class="lb-avatar">&#9928;</span>
+        <span class="lb-name">@StormbringerX</span>
+        <span class="lb-type">Cumulonimbus</span>
+        <span class="lb-fans">91.4K fans</span>
+        <span class="lb-price">$9.99/mo</span>
+      </div>
+      <div class="lb-row" onclick="showSubscribe('@GoldenHourGloriana', '$12.99/mo')">
+        <span class="lb-rank">&#129352;</span>
+        <span class="lb-avatar">&#127752;</span>
+        <span class="lb-name">@GoldenHourGloriana</span>
+        <span class="lb-type">Altocumulus</span>
+        <span class="lb-fans">115K fans</span>
+        <span class="lb-price">$12.99/mo</span>
+      </div>
+      <div class="lb-row" onclick="showSubscribe('@NacreousNadia', '$19.99/mo')">
+        <span class="lb-rank">&#129353;</span>
+        <span class="lb-avatar">&#128142;</span>
+        <span class="lb-name">@NacreousNadia</span>
+        <span class="lb-type">Nacreous (rare)</span>
+        <span class="lb-fans">203K fans</span>
+        <span class="lb-price">$19.99/mo</span>
+      </div>
+      <div class="lb-row" onclick="showSubscribe('@MammatusQueen', '$7.99/mo')">
+        <span class="lb-rank">4</span>
+        <span class="lb-avatar">&#127774;</span>
+        <span class="lb-name">@MammatusQueen</span>
+        <span class="lb-type">Mammatus</span>
+        <span class="lb-fans">67.2K fans</span>
+        <span class="lb-price">$7.99/mo</span>
+      </div>
+      <div class="lb-row" onclick="showSubscribe('@CirrusBabe', '$6.99/mo')">
+        <span class="lb-rank">5</span>
+        <span class="lb-avatar">&#9729;</span>
+        <span class="lb-name">@CirrusBabe</span>
+        <span class="lb-type">Cirrus</span>
+        <span class="lb-fans">38.7K fans</span>
+        <span class="lb-price">$6.99/mo</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section class="section" id="pricing">
+    <h2 class="section-title">&#128176; Subscription Plans</h2>
+    <p class="section-sub">All plans include unlimited cloud-watching. No actual weather guaranteed.</p>
+    <div class="pricing-grid">
+
+      <div class="pricing-card">
+        <div class="plan-name">Cirrus Free</div>
+        <div class="plan-price">$0<span>/mo</span></div>
+        <ul class="plan-features">
+          <li>&#10003; Public cloud posts</li>
+          <li>&#10003; Follow up to 5 clouds</li>
+          <li>&#10003; Standard definition cumulus</li>
+          <li>&#10007; No DMs with clouds</li>
+          <li>&#10007; No exclusive content</li>
+        </ul>
+        <button class="btn-plan" onclick="showAlert()">Get Started</button>
+      </div>
+
+      <div class="pricing-card featured-plan">
+        <div class="plan-badge">MOST POPULAR</div>
+        <div class="plan-name">Stratus Plus</div>
+        <div class="plan-price">$9.99<span>/mo</span></div>
+        <ul class="plan-features">
+          <li>&#10003; Everything in Free</li>
+          <li>&#10003; Unlimited cloud follows</li>
+          <li>&#10003; 4K Ultra HD precipitation</li>
+          <li>&#10003; DM your favourite clouds</li>
+          <li>&#10003; Early access to storm alerts</li>
+        </ul>
+        <button class="btn-plan btn-plan-featured" onclick="showAlert()">Subscribe Now</button>
+      </div>
+
+      <div class="pricing-card">
+        <div class="plan-name">Cumulonimbus Premium</div>
+        <div class="plan-price">$24.99<span>/mo</span></div>
+        <ul class="plan-features">
+          <li>&#10003; Everything in Plus</li>
+          <li>&#10003; Live storm streams</li>
+          <li>&#10003; Custom cloud requests</li>
+          <li>&#10003; Personal meteorologist</li>
+          <li>&#10003; Priority hail notifications</li>
+        </ul>
+        <button class="btn-plan" onclick="showAlert()">Go Premium</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section section-dark">
+    <h2 class="section-title">&#128172; What Our Subscribers Say</h2>
+    <div class="testimonials">
+      <div class="testimonial">
+        <p>"I used to look at clouds for free. Now I pay $9.99 a month for the SAME clouds and somehow it feels more exciting."</p>
+        <span class="t-author">— Dave T., Cloud Enthusiast</span>
+      </div>
+      <div class="testimonial">
+        <p>"@StormbringerX DMed me a 4K thunderhead and I nearly cried. Best $9.99 I've ever spent."</p>
+        <span class="t-author">— Sarah M., Amateur Meteorologist</span>
+      </div>
+      <div class="testimonial">
+        <p>"My therapist asked what's making me happy lately. I said 'subscribing to exclusive cloud content online.' She had no follow-up questions."</p>
+        <span class="t-author">— Anonymous</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-brand">
+      <span class="logo">&#9729;</span>
+      <span class="brand-name">OnlyClouds</span>
+    </div>
+    <p class="footer-tagline">Premium atmospheric content. Totally legal. Fully consensual precipitation.</p>
+    <div class="footer-links">
+      <a href="#" onclick="showAlert()">Terms of Condensation</a>
+      <a href="#" onclick="showAlert()">Privacy Nebula</a>
+      <a href="#" onclick="showAlert()">DMCA (Don't Modify Cloud Aerosols)</a>
+      <a href="#" onclick="showAlert()">2257 Statement (Cloud Age Verification)</a>
+    </div>
+    <p class="footer-legal">
+      OnlyClouds is a satire / parody website. All cloud images are from Wikimedia Commons under open licences.
+      OnlyClouds is not affiliated with OnlyFans or any cloud. Clouds cannot consent to subscriptions because they are water vapour.
+      &copy; 2026 OnlyClouds Inc. All precipitation reserved.
+    </p>
+  </footer>
+
+  <!-- MODAL -->
+  <div id="modal" class="modal-overlay" onclick="closeModal(event)">
+    <div class="modal">
+      <button class="modal-close" onclick="document.getElementById('modal').classList.remove('active')">&#10005;</button>
+      <div class="modal-icon">&#9729;</div>
+      <h2 id="modal-title">Subscribe</h2>
+      <p id="modal-body">This is a satire website. No real transactions occur here!</p>
+      <button class="btn-big" onclick="document.getElementById('modal').classList.remove('active')">Got it, lol</button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
