@@ -1,5 +1,26 @@
 // OnlyClouds — app.js
 
+// ---- Mobile nav toggle ----
+const navToggle = document.getElementById('navToggle');
+const navLinks  = document.getElementById('navLinks');
+
+navToggle?.addEventListener('click', () => {
+  const open = navLinks.classList.toggle('open');
+  navToggle.setAttribute('aria-expanded', open);
+});
+
+function closeNav() {
+  navLinks.classList.remove('open');
+  navToggle.setAttribute('aria-expanded', 'false');
+}
+
+// Close nav when clicking outside
+document.addEventListener('click', e => {
+  if (!navLinks.contains(e.target) && !navToggle.contains(e.target)) {
+    closeNav();
+  }
+});
+
 function showAlert() {
   const modal = document.getElementById('modal');
   document.getElementById('modal-title').textContent = 'Ha! Nice try ☁️';
